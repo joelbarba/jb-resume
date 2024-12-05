@@ -50,7 +50,7 @@ a {
 p { margin: 2px 0 4px; }
 
 
-h1, h3, h4 {
+h1, h3, h4, h5 {
   font-family: 'webVerdanaBold', Verdana, sans-serif;
   letter-spacing: 0.05em;
 }
@@ -76,6 +76,10 @@ h4 {
   font-weight: bold;
   font-size: 1.2em;
   margin: 5px 0;
+}
+h5 {
+  font-size: 1em;
+  margin: 15px 0 5px;
 }
 h3:first-child { margin: 10px 0; }
 h4:first-child { margin: 5px 0; }
@@ -125,15 +129,39 @@ ul.double-col {
   text-decoration: underline;
   background-color: #EDEDED;
 }
-.main-panel ul {
+.main-panel ul.courses {
   list-style-type: none; 
   padding-left: 0;
 }
-.main-panel ul a {
+.main-panel ul.courses a {
   color: black;
   text-decoration: underline;
 }
-.main-panel ul a:hover {
-  /* text-decoration: unset; */
+.main-panel ul.courses a:hover {
   background-color: #EDEDED;
+}
+
+
+#show-more {
+  background-color: transparent;
+  border: none;
+  font-size: 1em;
+  padding: 4px 6px;
+  color: gray;
+  font-style: italic;
+  cursor: pointer;
+  margin: 8px 0 0 -6px;
+  transition-duration: 0.3s;
+}
+#show-more:hover { background-color: #EDEDED; }
+.key-accomplishments li {
+  transition-duration: 0.2s;
+  transition-timing-function: cubic-bezier(0.05, 0.5, 0.2, 0.9);
+  transform-origin: left;
+}
+.key-accomplishments li.hide-key {
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  transform: translateX(+1000px);
 }
