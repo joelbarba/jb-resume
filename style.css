@@ -49,10 +49,7 @@
 
 ul { margin: 0; padding-left: 30px; }
 li { margin: 0 0 5px; }
-a {
-  text-decoration: unset;
-  transition-duration: 0.3s;
-}
+a { transition-duration: 0.3s; }
 p { margin: 2px 0 4px; }
 
 
@@ -100,6 +97,7 @@ h4:first-child { margin: 5px 0; }
   display: inline-flex;
   align-items: center;
   padding: 0 5px;
+  text-decoration: unset;
 }
 .top-panel a { color: white;  }
 .top-panel a[href]:hover {
@@ -111,6 +109,9 @@ h4:first-child { margin: 5px 0; }
 .info-panel ul { 
   margin: 0 0 25px; 
 }
+.info-panel a { color: black; }
+.info-panel a:hover { background-color: #338078cc; color: white; }
+
 ul.double-col {
   columns: 2;
   -webkit-columns: 2;
@@ -127,14 +128,12 @@ ul.double-col {
 /* .job-info i { font-weight: bold; font-size: 1.2em; } */
 
 .main-panel h4:not(h3 + h4) { margin: 25px 0 5px; }
-.main-panel h4 a { color: #338078; }
-.main-panel a {
-  text-decoration: unset;
-  transition-duration: 0.3s;
-}
-.main-panel h4 a:hover {
-  text-decoration: underline;
-  background-color: #EDEDED;
+.main-panel h4 a { color: #338078; text-underline-offset: 4px; }
+.main-panel h4 a:hover { 
+  background-color: #338078cc;
+  color: white;
+  padding: 0 2px;
+  margin: 0 -2px;
 }
 .main-panel ul.courses {
   list-style-type: none; 
