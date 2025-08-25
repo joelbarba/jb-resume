@@ -113,7 +113,8 @@ h5 {
   font-size: 1em;
   margin: 15px 0 5px;
 }
-h3:first-child { margin: 10px 0; }
+main section:first-child h3 { margin: 10px 0; }
+section.info-panel h3:first-child { margin: 10px 0; }
 h4:first-child { margin: 5px 0; }
 
 
