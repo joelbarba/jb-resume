@@ -127,7 +127,7 @@ h4:first-child { margin: 5px 0; }
   padding: 0 5px;
   text-decoration: unset;
 }
-.top-panel a { color: white;  }
+.top-panel a { color: white; border-radius: 3px; }
 .top-panel a[href]:hover {
   color: #338078;
   background-color: white;
