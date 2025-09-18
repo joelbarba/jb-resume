@@ -15,11 +15,6 @@ body {
 .background {
   background: #2f2f2f;
   overflow-x: hidden;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
 }
 
 main.container {
