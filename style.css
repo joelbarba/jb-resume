@@ -7,12 +7,22 @@
   src: url('./VerdanaBd.ttf');
 }
 
-body {
-  background: #2f2f2f;
-  overflow-x: hidden;
+body { 
+  margin: 0;
+  padding: 0;
 }
 
-.container {
+.background {
+  background: #2f2f2f;
+  overflow-x: hidden;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+main.container {
   display: grid;
   grid-template-columns: 30% 70%;
   font-family: 'webVerdana', Verdana, sans-serif;
@@ -21,14 +31,14 @@ body {
   border: 5px solid #ffffff; 
   min-width: 1000px;
   max-width: 70%;
-  margin: 50px auto;  
+  margin: 50px auto;
   font-size: 1rem; /* 16px; */
 }
 
-@media only screen and (max-width: 1850px) { .container { font-size: 0.875rem; /* 14px */ }}
-@media only screen and (max-width: 1600px) { .container { font-size: 0.750rem; /* 12px */ }}
+@media only screen and (max-width: 1850px) { main.container { font-size: 0.875rem; /* 14px */ }}
+@media only screen and (max-width: 1600px) { main.container { font-size: 0.750rem; /* 12px */ }}
 @media only screen and (max-width: 1050px) {
-  .container { 
+  main.container { 
     font-size: 0.875rem; /* 14px */
     grid-template-columns: 100%;
     min-width: 100%;
@@ -37,11 +47,11 @@ body {
     margin: 0;
     border: none;
   }
-  .container .top-panel  {
+  main.container .top-panel  {
     font-size: 0.9375rem; /* 15px */
     border-radius: 0;
   }
-  .container .right-column {
+  main.container .right-column {
     font-size: 0.750rem; /* 12px */
     padding-bottom: 3em;
   }
