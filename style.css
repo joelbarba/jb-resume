@@ -7,12 +7,16 @@
   src: url('./VerdanaBd.ttf');
 }
 
+body {
+  background: #2f2f2f;
+  overflow-x: hidden;
+}
+
 .container {
   display: grid;
   grid-template-columns: 30% 70%;
   font-family: 'webVerdana', Verdana, sans-serif;
   line-height: 1.5;
-  background: #2f2f2f;
   border-radius: 8px;
   border: 5px solid #ffffff; 
   min-width: 1000px;
@@ -37,7 +41,7 @@
     font-size: 0.9375rem; /* 15px */
     border-radius: 0;
   }
-  .container .main-panel {
+  .container .right-column {
     font-size: 0.750rem; /* 12px */
     padding-bottom: 3em;
   }
@@ -70,7 +74,7 @@
   padding: 0.8em 2em;
 }
 
-.main-panel {
+.right-column {
   background-color: white;
   padding: 0.8em min(2em, 4%);
 }
@@ -155,23 +159,23 @@ ul.double-col {
 .job-info span { margin: 0 40px 0 8px; }
 /* .job-info i { font-weight: bold; font-size: 1.2em; } */
 
-.main-panel h4:not(h3 + h4) { margin: 25px 0 5px; }
-.main-panel h4 a { color: #338078; text-underline-offset: 4px; }
-.main-panel h4 a:hover { 
+.right-column h4:not(h3 + h4) { margin: 25px 0 5px; }
+.right-column h4 a { color: #338078; text-underline-offset: 4px; }
+.right-column h4 a:hover { 
   background-color: #338078cc;
   color: white;
   padding: 0 2px;
   margin: 0 -2px;
 }
-.main-panel ul.courses {
+.right-column ul.courses {
   list-style-type: none; 
   padding-left: 0;
 }
-.main-panel ul.courses a {
+.right-column ul.courses a {
   color: black;
   text-decoration: underline;
 }
-.main-panel ul.courses a:hover {
+.right-column ul.courses a:hover {
   background-color: #EDEDED;
 }
 
